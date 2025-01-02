@@ -1,13 +1,14 @@
-import * as ReactDOM from "react-dom/client";
 import { ThemeProvider } from "styled-components";
 import theme from "@/shared/theme";
 import { GlobalStyle } from "@/shared/global";
-import { RouterProvider } from "react-router-dom";
-import router from "./router/router.js";
+import { Outlet } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <ThemeProvider theme={theme}>
-    <GlobalStyle />
-    <RouterProvider router={router} />
-  </ThemeProvider>
-);
+const App: React.FC = () => {
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Outlet />
+    </ThemeProvider>
+  );
+};
+export default App;

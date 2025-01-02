@@ -144,5 +144,33 @@ textarea:active {
     white-space: nowrap;
 }
 
-  /* 아래에 추가적으로 적용할 전역 스타일 작성 */
+@media (min-width: 375px) {
+    #root {
+        width: 430px;
+    }
+}
+@media (max-width: 500px) {
+    #root {
+        width: 100vw;
+    }
+}
+
+#root {
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+button {
+    cursor: pointer;
+}
+
 `;
