@@ -4,8 +4,13 @@ const colors = {
   primary1: "#51B1A6",
   primary2: "#9CE5CB",
   primary3: "#EAF6E4",
-  black: "24243F",
-  gray: "5A5A75",
+  titleGreen: "#83CA92",
+  green: "#AEE2D6",
+  backGray: "#F6F6F6",
+  iconGray: "#ECEFF6",
+  black: "#3D3D3D",
+  gray: "#5A5A75",
+  blue: "#95D6FF",
 };
 export const lightTheme = {
   color: "#FFFFFF",
@@ -17,16 +22,35 @@ const fontSize = {
   m: "1rem",
   lg: "1.25rem",
 };
+const fontWeight = {
+  regular: "400",
+  medium: "500",
+  semibold: "600",
+  bold: "700",
+};
 const size = {
   xs: "0.5rem",
   s: "1rem",
   m: "1.5rem",
+};
+const borderRadius = {
+  xs: "0.25rem",
+  sm: "0.5rem",
+  base: "0.75rem",
+  md: "1rem",
+  lg: "1.5rem",
+  xl: "2rem",
+  "2xl": "2.63rem",
+  "3xl": "3.13rem",
+  "4xl": "6.25rem",
 };
 const theme = {
   colors,
   lightTheme,
   fontSize,
   size,
+  fontWeight,
+  borderRadius,
 };
 
 export default theme;

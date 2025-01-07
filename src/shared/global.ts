@@ -1,8 +1,53 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
+import WorkSansRegular from "../assets/fonts/WorkSans-Regular.woff";
+import WorkSansMedium from "@/assets/fonts/WorkSans-Medium.woff";
+import WorkSansBold from "@/assets/fonts/WorkSans-Bold.woff";
+import WorkSansSemiBold from "@/assets/fonts/WorkSans-SemiBold.woff";
+import Jalnan from "@/assets/fonts/Jalnan2TTF.ttf";
 
 export const GlobalStyle = createGlobalStyle`
   ${reset}
+  @font-face {
+    font-family: 'Work Sans';
+    src: url(${WorkSansRegular}) format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Work Sans';
+    src: url(${WorkSansMedium}) format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Work Sans';
+    src: url(${WorkSansSemiBold}) format('woff');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'Work Sans';
+    src: url(${WorkSansBold}) format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Jalnan';
+    src: url(${Jalnan}) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+  }
 // border-box 초기화
 *,
 *:before,
@@ -41,9 +86,10 @@ figure,
 figcaption {
     margin: 0;
     padding: 0;
+
 }
 
-// 폰트 초기화
+
 
 // 링크 초기화
 a,
@@ -172,5 +218,7 @@ body {
 button {
     cursor: pointer;
 }
+
+
 
 `;
