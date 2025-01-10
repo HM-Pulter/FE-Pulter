@@ -11,6 +11,7 @@ const colors = {
   black: "#3D3D3D",
   gray: "#5A5A75",
   blue: "#95D6FF",
+  white: "#FFFFFF",
 };
 export const lightTheme = {
   color: "#FFFFFF",
@@ -21,6 +22,7 @@ const fontSize = {
   s: "0.815rem",
   m: "1rem",
   lg: "1.25rem",
+  xl: "1.94rem",
 };
 const fontWeight = {
   regular: "400",

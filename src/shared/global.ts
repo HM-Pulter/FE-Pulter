@@ -38,7 +38,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   @font-face {
-    font-family: 'Jalnan';
+    font-family:'Jalnan';
     src: url(${Jalnan}) format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -192,7 +192,7 @@ textarea:active {
 
 @media (min-width: 375px) {
     #root {
-        width: 430px;
+        width: 375px;
     }
 }
 @media (max-width: 500px) {

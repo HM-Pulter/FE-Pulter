@@ -1,9 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import { ROUTER_URLS } from "@/constants/urls";
+
 import { lazy, Suspense } from "react";
 import App from "../App";
 
-const HOME_PAGE = lazy(() => import("@/pages/Home"));
+const INTRO_PAGE = lazy(() => import("@/pages/Intro/Intro"));
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: ROUTER_URLS.home,
-        element: <HOME_PAGE />,
+        element: <INTRO_PAGE />,
       },
     ],
   },
